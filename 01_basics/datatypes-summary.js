@@ -28,5 +28,26 @@ const myFunction = function(){    //console.log(typeof myFunction) -> function
 console.log("Hello World");
 }
 
-console.log(typeof myFunction)
+//console.log(typeof myFunction)
 
+
+//<<<<<<<<<<<<<<<<<<<<<<< Memory >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// Stack (Primitive)    Heap (NonPrimitive)
+// In Stack we will get a copy
+// In heap we will get a reference
+let myFriend1 = "Saqib"
+let myFriend2 = myFriend1
+myFriend2 = "Sufiyan"
+
+//console.log(myFriend1)
+//console.log(myFriend2)
+
+let userOne = {
+    name: "Moin",
+    country: "Saudi"
+}
+
+let userTwo = userOne
+userTwo.country = "UK"
+console.log(userOne.country)
+console.log(userTwo.country)
